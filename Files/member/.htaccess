@@ -1,0 +1,38 @@
+RewriteEngine On    # Turn on the rewriting engine
+
+RewriteRule    ^login/?$    login.php    [NC,L]   
+RewriteRule    ^register/?$    register.php    [NC,L]   
+RewriteRule    ^register/([A-Za-z0-9-]+)/?$    register.php?ref=$1    [NC,L]   
+RewriteRule    ^signout/?$    signout.php    [NC,L]   
+RewriteRule    ^PrivacyPolicy/?$    privacypolicy.php    [NC,L]   
+RewriteRule    ^TermsOfService/?$    tos.php    [NC,L]   
+
+RewriteRule    ^ForgotPassword/?$    forgotpass.php    [NC,L]   
+RewriteRule    ^dashboard/?$    home.php    [NC,L]   
+RewriteRule    ^ChangePassword/?$    changepass.php    [NC,L]   
+RewriteRule    ^EditProfile/?$    updateprofile.php    [NC,L]
+RewriteRule    ^verify/?$    verify.php    [NC,L]
+
+
+RewriteRule    ^UpgradeToPremium/?$    UpgradeToPremium.php    [NC,L]
+
+RewriteRule    ^BinarySummery/?$    bsummery.php    [NC,L]
+RewriteRule    ^RefByMe/?$    myref.php    [NC,L]
+
+RewriteRule    ^SupportTicket/?$    SupportTicket.php    [NC,L]
+RewriteRule    ^OpenTicket/?$    OpenTicket.php    [NC,L]
+RewriteRule    ^ViewTicket/([A-Za-z0-9-]+)/?$    ViewTicket.php?tid=$1    [NC,L]   
+  
+RewriteRule    ^TransactionHistory/?$    trxhistory.php    [NC,L]   
+RewriteRule    ^TransactionPIN/?$    trxpin.php    [NC,L]   
+RewriteRule    ^FundTransfer/?$    transferfund.php    [NC,L]   
+RewriteRule    ^WithdrawFund/?$    withdraw.php    [NC,L]   
+RewriteRule    ^AddFund/?$    addfund.php    [NC,L]   
+
+RewriteRule    ^ReferralBonus/?$    increffer.php    [NC,L]   
+RewriteRule    ^BinaryBonus/?$    incbinary.php    [NC,L]   
+
+RewriteRule    ^Tree/?$    tree.php    [NC,L]   
+RewriteRule    ^Tree/([A-Za-z0-9-]+)/?$    tree.php?name=$1    [NC,L]   
+
+RewriteRule    ^withrawmoney/?$    withrawmoney.php    [NC,L]   
